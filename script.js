@@ -1,4 +1,4 @@
-// document.addEventListener('DOMContentLoaded',)
+
 let bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
 
 function addBookmark ()
@@ -81,4 +81,5 @@ function showBookmarks()
     li.appendChild(a);
     list.append(li);
   });
+
 }
