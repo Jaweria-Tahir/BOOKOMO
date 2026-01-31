@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>BOOKOMO</title>
+</head>
+<body>
+ <header>
+    <h1>BOOKOMO</h1>
+    <p>Your Personal Bookmark Manager</p>
+  </header>
+
+  <div class="container">
+    <div class="input-group">
+      <input type="text" id="siteName" placeholder="Website Name">
+      <input type="url" id="siteUrl" placeholder="Website URL">
+      <button onclick="addBookmark()">Add Bookmark</button>
+    </div>
+
+    <div class="btns">
+  <button onclick="deleteBookmark()">Delete Bookmark</button>
+  <button onclick="showBookmarks()">Show Bookmarks</button>
+</div>
+    
+    <div id="toast"></div>
+
+  </div>
+  <div id="sidebar">
+  <h2>Saved Bookmarks</h2>
+  <ul id="bookmarkList"></ul>
+  </div>
+
+
+  <footer>
+    <p>&copy; 2026 BOOKOMO. All rights reserved.</p>
+  </footer>
+  <script src ="script.js"></script>
+</body>
+</html>
